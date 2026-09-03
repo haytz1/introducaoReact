@@ -1,11 +1,44 @@
+import { useState } from "react"
 
 function App() {
+             //Funçao
+             //  |
+             //  V
+  let [clicks, setClicks] = useState(0)
+
+  let [nome, setNome] = useState("?")
+
+  function aumentarclick(){
+    setClicks(clicks + 1)
+  }
+  function mudanome(){
+    setNome("MiguelDoFreeFireMestreTop1")
+  }
 
   return (
     <div>
 
-    <h1>Hello World!</h1>
-    <p>Ola mundo!</p>
+      <h1>Hello World!</h1>
+      <p>Ola mundo!</p>
+
+      <p>Meu nome é: {nome}</p>
+      <button onClick={mudanome} > Aperte </button>
+      {/* ou pode usar tambem onClick={()=> setnome("NovoNome")} */}
+
+    <hr/>
+
+    <p>Voce cliclou {clicks} vezes</p>
+    <button onClick={aumentarclick} >Aperte aqui</button> 
+
+
+
+
+    {/*
+            Arrow function ()=> Funçao do tipo seta (lambda)
+            funçao anonima
+     */}
+
+
 
     </div>
   )
