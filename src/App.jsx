@@ -1,4 +1,5 @@
 import { useState } from "react"
+import "./app.css"
 
 function App() {
              //Funçao
@@ -23,20 +24,16 @@ function App() {
 
       <p>Meu nome é: {nome}</p>
       <button onClick={mudanome} > Aperte </button>
-      {/* ou pode usar tambem onClick={()=> setnome("NovoNome")} */}
+      {/* ou pode usar tambem onClick={()=> setnome("NovoNome")} 
+          Arrow function ()=> Funçao do tipo seta (lambda)
+          funçao anonima
+      
+      */}
 
     <hr/>
 
     <p>Voce cliclou {clicks} vezes</p>
     <button onClick={aumentarclick} >Aperte aqui</button> 
-
-
-
-
-    {/*
-            Arrow function ()=> Funçao do tipo seta (lambda)
-            funçao anonima
-     */}
 
 
 
