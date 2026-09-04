@@ -17,7 +17,9 @@ function App() {
   }
 
   return (
-    <div>
+    <div className="container" >
+
+      
 
       <h1>Hello World!</h1>
       <p>Ola mundo!</p>

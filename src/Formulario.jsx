@@ -11,16 +11,18 @@ function Formulario(){
 
         if (nome.length < 3 || idade.length < 0 || cidade.length < 3 || estado.length < 3 ){
             alert("Algo esta errado")
-        }else{
-
-            alert(`Ola ${nome}, que tem ${idade} e mora em ${cidade} ${estado} `)
+            return
         }
+            alert(`Ola ${nome}, que tem ${idade} e mora em ${cidade} ${estado} `)
 
 
     }
 
     return(
         <>
+            <br/>
+            <br/>
+            <br/>
             <h1>Formulario</h1>
             <p>Aprendendo a usar o input no React</p>
 
